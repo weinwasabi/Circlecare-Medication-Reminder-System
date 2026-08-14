@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": " ",
+    "slug": "circlecare",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "circlecare",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/circlecare.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#277859"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.circlecare",
+      "infoPlist": {
+        "NSUserNotificationsUsageDescription": "CircleCare sends medication reminders to help you stay on schedule."
+      }
+    },
+      "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#277859"
+        }
+      ],
+      "expo-asset",
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
